@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderedActivity"
+    android:orientation="vertical"
+    android:background="#FFEAB4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:gravity="start"
+            android:onClick="backmenu">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layitem">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/myorderitem"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_marginTop="30dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/realwhite"
+                android:padding="7dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total : "
+                    android:textSize="20dp"
+                    android:textColor="#000000">
+
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp "
+                    android:textSize="20dp"
+                    android:textColor="#000000">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/totalharga"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center">
+
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:onClick="paynoww"
+                android:layout_margin="15dp"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="Pay now"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:padding="5dp"
+                android:background="@drawable/reddelete"
+                android:textAlignment="center"></TextView>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

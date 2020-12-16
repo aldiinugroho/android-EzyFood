@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detaildrinkcombo"
+    android:orientation="vertical"
+    android:background="#FFEAB4">
+
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/imageitem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/banner"
+            android:layout_centerInParent="true">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:onClick="backtomenuitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:padding="5dp"></TextView>
+
+    <RelativeLayout
+        android:id="@+id/cont_item"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/banner"
+        android:background="@drawable/menuround"
+        android:padding="10dp"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/combo_itemnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Nama Makanan"
+            android:textColor="#000000"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/combo_itemnama"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp "
+                android:textColor="#000000">
+
+            </TextView>
+            <TextView
+                android:id="@+id/combo_itemprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Harga Makanan"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:paddingTop="10dp">
+
+            </TextView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cont_item"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+
+
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:background="@drawable/reddelete"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:onClick="minus">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/minus"
+                android:layout_centerInParent="true">
+            </ImageView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/qty"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="0"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:background="@drawable/greenadd"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:onClick="plus">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/plus"
+                android:layout_centerInParent="true">
+            </ImageView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Order Now"
+        android:layout_below="@id/count"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="25dp"
+        android:background="@drawable/greenadd"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:onClick="ordernow">
+
+    </TextView>
+
+</RelativeLayout>

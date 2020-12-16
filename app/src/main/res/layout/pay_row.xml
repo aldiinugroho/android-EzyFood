@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:padding="7dp"
+        android:layout_margin="15dp">
+
+        <LinearLayout
+            android:background="@drawable/realwhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/paynameOrder"
+                android:layout_width="171dp"
+                android:layout_height="wrap_content"
+                android:text="nama item here">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/payqtyOrder"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:text="20">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="x"
+                    android:textAlignment="center">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp "
+                    android:textAlignment="center">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/payhargaOrder"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="harga satuan">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
